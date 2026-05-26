@@ -16,7 +16,7 @@ export default function App() {
 
   const orderNow = () => {
     const message = `Hi Zeh Malted, I want to order ${qty} packet(s) of Signature Wellness Blend - Sathu Mix. Total: ₹${total}`;
-    window.open(`https://wa.me/91XXXXXXXXXX?text=${encodeURIComponent(message)}`, "_blank");
+    window.open(`https://wa.me/917338931665?text=${encodeURIComponent(message)}`, "_blank");
   };
 
   return (
