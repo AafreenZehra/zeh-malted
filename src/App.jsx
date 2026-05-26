@@ -1,5 +1,17 @@
 import React, { useState } from "react";
-import { Leaf, Heart, Star, MessageCircle, Dumbbell, Sparkles, ShieldCheck, Instagram, ShoppingBag, Menu, X } from "lucide-react";
+import {
+  Leaf,
+  Heart,
+  Star,
+  MessageCircle,
+  Dumbbell,
+  Sparkles,
+  ShieldCheck,
+  Instagram,
+  ShoppingBag,
+  Menu,
+  X
+} from "lucide-react";
 
 export default function App() {
   const [qty, setQty] = useState(1);
@@ -9,14 +21,32 @@ export default function App() {
   const total = qty * price;
 
   const ingredients = [
-    "Ragi", "Kambu", "Thinai", "Samai", "Varagu", "Wheat",
-    "Green Gram", "Bengal Gram", "Raw Rice", "Black Urad Dal", "Black Rice",
-    "Horse Gram", "Peanuts", "Almonds", "Cashews", "Walnuts", "Pistachios", "Sunflower Seeds"
+    "Ragi",
+    "Kambu",
+    "Thinai",
+    "Samai",
+    "Varagu",
+    "Wheat",
+    "Green Gram",
+    "Bengal Gram",
+    "Raw Rice",
+    "Black Urad Dal",
+    "Black Rice",
+    "Horse Gram",
+    "Peanuts",
+    "Almonds",
+    "Cashews",
+    "Walnuts",
+    "Pistachios",
+    "Sunflower Seeds"
   ];
 
   const orderNow = () => {
     const message = `Hi Zeh Malted, I want to order ${qty} packet(s) of Signature Wellness Blend - Sathu Mix. Total: ₹${total}`;
-    window.open(`https://wa.me/917338931665?text=${encodeURIComponent(message)}`, "_blank");
+    window.open(
+      `https://wa.me/91XXXXXXXXXX?text=${encodeURIComponent(message)}`,
+      "_blank"
+    );
   };
 
   return (
@@ -67,10 +97,13 @@ export default function App() {
                 <h3>Sathu Mix</h3>
                 <span>18 nourishing ingredients</span>
               </div>
+
               <div className="glass">Malt Drink</div>
               <div className="bowl">18 Ingredients</div>
             </div>
-            <p className="visual-note">White zip-lock pouch + premium Zeh Malted sticker</p>
+            <p className="visual-note">
+              White zip-lock pouch + premium Zeh Malted sticker
+            </p>
           </div>
         </div>
       </section>
@@ -120,6 +153,7 @@ export default function App() {
       <section id="benefits" className="section benefits-section">
         <p className="small">Why people will love it</p>
         <h2>Benefits</h2>
+
         <div className="benefit-grid">
           <div><Sparkles /> Skin glow</div>
           <div><ShieldCheck /> Anaemia support</div>
@@ -133,30 +167,38 @@ export default function App() {
       <section id="ingredients" className="section">
         <p className="small">What’s inside?</p>
         <h2>18 Ingredients</h2>
+
         <p className="desc-small">
-          A wholesome blend of grains, millets, pulses, nuts and seeds — each chosen for nourishment, strength and wellness.
+          A wholesome blend of grains, millets, pulses, nuts and seeds — each
+          chosen for nourishment, strength and wellness.
         </p>
 
         <div className="ingredients-grid">
-          {ingredients.map((item) => <span key={item}>{item}</span>)}
+          {ingredients.map((item) => (
+            <span key={item}>{item}</span>
+          ))}
         </div>
       </section>
 
       <section className="section cards-section">
         <h2>Ingredient Benefits</h2>
+
         <div className="cards">
           <div>
             <h3>Millets</h3>
             <p>Support fullness, steady energy and traditional daily nourishment.</p>
           </div>
+
           <div>
             <h3>Pulses</h3>
             <p>Plant protein from pulses supports strength, recovery and daily wellness.</p>
           </div>
+
           <div>
             <h3>Nuts & Seeds</h3>
             <p>Add healthy fats, minerals and nourishment that support glow and energy.</p>
           </div>
+
           <div>
             <h3>Iron-rich Goodness</h3>
             <p>Ragi, black rice, horse gram and seeds help support iron intake for anaemia care.</p>
@@ -194,6 +236,7 @@ export default function App() {
         <div className="zeh">Zeh</div>
         <div className="malted">MALTED</div>
         <p>Real ingredients. Real nourishment.</p>
+
         <a href="https://instagram.com/zeh.malted" target="_blank" rel="noreferrer">
           <Instagram size={16} /> @zeh.malted
         </a>
