@@ -15,7 +15,7 @@ export default function App() {
 
   const orderNow = () => {
     const message = `Hi Zeh Malted, I want to order ${qty} packet(s) of ${product.name} - ${product.tamil}. Total: ₹${total}`;
-    window.open(`https://wa.me/91XXXXXXXXXX?text=${encodeURIComponent(message)}`);
+    window.open(`https://wa.me/917338931665?text=${encodeURIComponent(message)}`);
   };
 
   return (
