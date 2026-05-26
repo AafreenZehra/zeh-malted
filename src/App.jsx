@@ -8,7 +8,6 @@ import {
   Dumbbell,
   Sparkles,
   ShieldCheck,
-  Instagram,
   ShoppingBag,
   Menu,
   X
@@ -239,7 +238,7 @@ export default function App() {
         <p>Real ingredients. Real nourishment.</p>
 
         <a href="https://instagram.com/zeh.malted" target="_blank" rel="noreferrer">
-          <Instagram size={16} /> @zeh.malted
+           @zeh.malted
         </a>
       </footer>
 
