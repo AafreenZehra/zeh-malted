@@ -1,0 +1,7 @@
+zeh-malted/
+├─ package.json
+├─ index.html
+└─ src/
+   ├─ main.jsx
+   ├─ App.jsx
+   └─ style.css
