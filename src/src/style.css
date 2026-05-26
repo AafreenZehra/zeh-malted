@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #f4eadb;
+  color: #3f2718;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.header {
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f4eadb;
+  border-bottom: 1px solid #d8c4aa;
+  position: sticky;
+  top: 0;
+}
+
+.zeh {
+  font-style: italic;
+  font-size: 30px;
+}
+
+.malted {
+  letter-spacing: 7px;
+  font-weight: bold;
+}
+
+.nav-btn,
+.main-btn,
+.whatsapp {
+  background: #4a2d1d;
+  color: white;
+  padding: 13px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hero {
+  padding: 70px 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.small {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+
+h1 {
+  font-size: 65px;
+  line-height: 1;
+  margin: 10px 0;
+}
+
+.desc {
+  font-size: 19px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.product-card {
+  background: #ead9c1;
+  border-radius: 35px;
+  padding: 40px;
+  box-shadow: 0 20px 40px #00000018;
+}
+
+.pack,
+.mock-pack {
+  background: white;
+  border-radius: 30px;
+  padding: 50px 25px;
+  text-align: center;
+  border: 1px solid #d8c4aa;
+}
+
+.features {
+  background: #4a2d1d;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.features div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section {
+  padding: 70px 8%;
+}
+
+.section h2 {
+  font-size: 42px;
+}
+
+.product-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  background: #fff7ec;
+  padding: 35px;
+  border-radius: 35px;
+  border: 1px solid #d8c4aa;
+}
+
+.image-box {
+  background: #ead9c1;
+  border-radius: 25px;
+  padding: 35px;
+}
+
+.price {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.recipes,
+.order {
+  background: #ead9c1;
+  margin: 40px 8%;
+  border-radius: 35px;
+}
+
+.qty {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 25px 0;
+}
+
+.qty button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #4a2d1d;
+  background: transparent;
+  font-size: 22px;
+}
+
+.whatsapp {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  background: #3f2718;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .hero,
+  .product-box {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 43px;
+  }
+
+  .header {
+    padding: 15px 5%;
+  }
+}
