@@ -1,7 +1,15 @@
-zeh-malted/
-├─ package.json
-├─ index.html
-└─ src/
-   ├─ main.jsx
-   ├─ App.jsx
-   └─ style.css
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "lucide-react": "latest"
+  },
+  "devDependencies": {}
+}
