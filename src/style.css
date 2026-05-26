@@ -64,6 +64,7 @@ body {
   border: none;
   text-decoration: none;
   cursor: pointer;
+  font-family: Georgia, serif;
 }
 
 .menu-btn {
@@ -107,17 +108,10 @@ h1 {
   margin-top: 28px;
 }
 
-.insta-btn {
-  border: 1px solid #4a2d1d;
-  color: #4a2d1d;
-  padding: 12px 22px;
-  border-radius: 30px;
-  text-decoration: none;
-}
-
 .whatsapp {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 9px;
 }
 
@@ -328,6 +322,7 @@ h1 {
   border: 1px solid #4a2d1d;
   background: transparent;
   font-size: 22px;
+  cursor: pointer;
 }
 
 footer {
@@ -442,11 +437,8 @@ footer a {
   }
 
   .main-btn,
-  .whatsapp,
-  .insta-btn {
+  .whatsapp {
     width: 100%;
-    justify-content: center;
-    text-align: center;
   }
 
   .hero-visual {
